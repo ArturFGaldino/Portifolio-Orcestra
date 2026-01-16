@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="style.css">
+  <title>Portfólio do Herói - Artur Fernandes Galdino</title>
+</head>
+<body>
+  <header>
+    <div class="header-container">
+      <div class="nome">
+        <h1>Artur Fernandes Galdino</h1>
+        <p>Desenvolvedor em Treinamento</p>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#projetos">Projetos</a></li>
+          <li><a href="#contato">Contato</a></li>
+          <li><a href="#painel-heroi">Painel do Herói</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="sobre">
+      <h2>Sobre Mim</h2>
+      <div class="sobre-container">
+        <img src="./img/foto1.jp" alt="Foto do herói">
+        <p>Olá! Meu nome é Artur Fernandes Galdino. Estou começando minha jornada no desenvolvimento web.</p>
+      </div>
+    </section>
+
+    <section id="projetos">
+      <h2>Meus Projetos</h2>
+      <table border="1">
+        <tr>
+          <th>Projeto</th>
+          <th>Descrição</th>
+          <th>Link</th>
+        </tr>
+        <tr class="card-projeto">
+          <td>LandingPage Inovatech</td>
+          <td>Página criada em uma dinamica da Orc'estra</td>
+          <td><a href="https://membro-orc-estra.github.io/Inovatech/">Ver</a></td>
+        </tr>
+        <tr class="card-projeto">
+          <td>OncoMap</td>
+          <td>Página criada para promover a transparência e o controle social na saúde.</td>
+          <td><a href="https://github.com/unb-mds/2025-2-OncoMap">Ver</a></td>
+        </tr>
+        <tr class="card-projeto">
+          <td>Projeto Final Orientação a Objetos</td>
+          <td>Página criada para a matéria de Orientação a Objetos</td>
+          <td><a href="https://github.com/ArturFGaldino/Trabalho-Final-OO">Ver</a></td>
+        </tr>
+      </table>
+    </section>
+
+    <section id="contato">
+      <h2>Contato</h2>
+      <form action="#" method="POST">
+        <div class="input">
+          <input type="text" id="nome" name="nome" required placeholder="Nome">
+          <input type="email" id="email" name="email" required placeholder="E-Mail">
+        </div>
+        <textarea id="mensagem" name="mensagem" rows="4" cols="30" placeholder="Mensagem"></textarea>
+        <button type="submit" onclick="enviarMsg()">Enviar</button>
+      </form>
+    </section>
+
+    <section id="painel-heroi">
+  <h2>Painel do Herói</h2>
+  <div class="ficha-container">
+    <div class="status-card">
+      <ul>
+        <li><strong>Nome:</strong> <span id="hero-nome">Carregando...</span></li>
+        <li><strong>Classe:</strong> <span id="hero-classe">Carregando...</span></li>
+        <li><strong>Nível:</strong> <span id="hero-nivel">1</span></li>
+        <li><strong>XP:</strong> <span id="hero-xp">0</span></li>
+      </ul>
+      
+      <div class="xp-bar-container">
+        <div id="xp-progresso" class="xp-bar-fill"></div>
+      </div>
+
+      <button id="btn-exp" onclick="ganharXP()">+ Ganhar XP</button>
+    </div>
+  </div>
+</section>
+  </main>
+
+  <footer>
+    <p>© 2026 Artur Fernandes Galdino. Todos os direitos reservados.</p>
+  </footer>
+  <script src="./main.js"></script>
+</body>
+</html>
