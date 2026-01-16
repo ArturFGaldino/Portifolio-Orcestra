@@ -1,0 +1,337 @@
+/* =================== RESET.CSS =================== */
+*, 
+*:after,
+*:before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+body{
+    font-size: 100%;
+    list-style-type: none;
+    width: 100%;
+}
+
+h1, h2, h3 {
+  font-family: 'Cinzel', serif;
+}
+
+a {
+  color: #2EB600;
+}
+
+
+/* =================== HEADER E FOOTER =================== */
+
+header, footer {
+  background-color: #01571E;
+  color: #FFFBDC;
+  width: 100%;
+}
+
+.header-container{
+    display: flex;
+    justify-content: space-around;
+}
+
+header nav ul {
+  list-style: none;
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+}
+
+.nome {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header nav{
+    align-self: center;
+}
+
+header nav li{
+    font-size: large;
+}
+
+header nav li a:hover{
+    color: #FFFBDC;
+}
+
+footer{
+    display: flex;
+justify-content: center;
+}
+
+/* =================== BODY =================== */
+
+
+body {
+  background-color: #FFFBDC;
+  color: #003D0D;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+h2 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+    justify-self: center;
+}
+
+/* =================== SOBRE MIM =================== */
+
+#sobre{
+    align-items: center;
+}
+.sobre-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.sobre-container {
+    display: flex;
+    align-items: center;
+    gap: 40px; 
+    padding: 60px 20px;
+    background-color: #FFFBCD; 
+    border-radius: 15px;
+    margin: 20px auto;
+    max-width: 90%;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+#sobre img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%; 
+    object-fit: cover; 
+    border: 5px solid #003D0D; 
+    transition: transform 0.3s ease;
+}
+
+#sobre img:hover {
+    transform: scale(1.05); 
+}
+
+#sobre p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    max-width: 500px;
+}
+
+#sobre p {
+  text-align: justify;
+}
+
+@media (max-width: 768px) {
+    #sobre {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+/* =================== MEUS PROJETOS =================== */
+
+#projetos {
+    padding: 20px 0;
+}
+
+#projetos table {
+    width: 90%; 
+    margin: 20px auto;
+    background-color: #FFFBCD;
+    border-radius: 15px;
+    overflow: hidden; 
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    border-collapse: collapse; 
+}
+
+#projetos th {
+    background-color: #01571E; 
+    color: #FFFBDC; 
+    padding: 18px;
+    text-align: center;
+    font-family: 'Cinzel', serif; 
+    
+}
+
+#projetos td {
+    padding: 15px;
+    border-bottom: 1px solid #e0e0e0;
+    color: #003D0D;
+}
+
+#projetos th{
+    text-align: center;
+}
+
+
+#projetos th:nth-child(1) { width: 25%; } 
+#projetos th:nth-child(2) { width: 60%; } 
+#projetos th:nth-child(3) { width: 15%; } 
+
+#projetos td:nth-child(3) {
+    text-align: center;
+}
+
+#projetos td a {
+    background-color: #2EB600;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background 0.3s;
+    display: inline-block;
+}
+
+#projetos td a:hover {
+    background-color: #01571E;
+    color: #FFFBDC;
+}
+
+@media (max-width: 768px) {
+    #projetos table {
+        font-size: 14px;
+        width: 95%;
+    }
+    
+    #projetos th, #projetos td {
+        padding: 10px 5px;
+    }
+}
+
+/* =================== CONTATO =================== */
+
+#contato form{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: #FFFBCD; 
+    border-radius: 15px;
+    margin: 20px auto;
+    width: 90%;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+input, textarea {
+    appearance: none;
+    -webkit-appearance: none;
+    border :2px solid #003D0D;
+    border-radius: 8px;
+    background: transparent;
+    font-family: inherit;
+    font-size: inherit;
+    color: inherit;
+    box-shadow: none;
+    resize: none;
+}
+
+.input, textarea{
+    width: 90%;
+}
+
+.input{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: center;
+    width: 90%;
+    margin: 1.5rem 0rem;
+}
+
+.input input {
+    flex: 1 1 200px; 
+    padding: 12px;
+}
+
+textarea {
+    width: 90%; 
+    padding: 12px;
+    margin-bottom: 1.5rem;
+}
+
+button{
+    background-color: #003D0D;
+    color : #FFFBCD;
+    font-weight: 500;
+    font-size: 1.3rem;
+    padding: 1rem ;
+    border-radius: 4rem;
+    border-color: transparent;
+    width: 30%;
+    align-self: center;
+    cursor: pointer;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+/* =================== PAINEL DO HEROI =================== */
+
+#painel-heroi {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.ficha-container {
+    background-color: #FFFBCD;
+    width: 90%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 30px;
+    border: 3px double #01571E; 
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.status-card ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.status-card li {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    border-bottom: 1px dashed #01571E;
+}
+
+
+.xp-bar-container {
+    width: 100%;
+    height: 20px;
+    background-color: #ddd;
+    border-radius: 10px;
+    margin: 20px 0;
+    overflow: hidden;
+    border: 1px solid #01571E;
+}
+
+.xp-bar-fill {
+    width: 0%; 
+    height: 100%;
+    background-color: #2EB600;
+    transition: width 0.3s ease;
+}
+
+#btn-exp {
+    background-color: #01571E;
+    color: #FFFBDC;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    font-family: 'Cinzel', serif;
+    transition: transform 0.2s;
+}
+
+#btn-exp:hover {
+    background-color: #2EB600;
+    transform: scale(1.05);
+}
